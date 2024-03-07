@@ -5,7 +5,9 @@ from .forms import CollaborateForm
 
 
 def about_me(request):
-
+    """
+    render render.
+    """
     if request.method =="POST":
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
